@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Shivkanta's Resume Builder</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Online Resume Builder</h1>
+  </header>
+
+  <div id="form-container">
+    <h2>Personal Information</h2>
+    <div class="form-row">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" required>
+    </div>
+
+    <div class="form-row">
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+    </div>
+
+    <div class="form-row">
+      <label for="phone">Phone/Mobile:</label>
+      <input type="tel" id="phone" required>
+    </div>
+
+    <h2>Experience</h2>
+    <div class="form-row">
+      <label for="company">Company:</label>
+      <input type="text" id="company">
+    </div>
+
+    <div class="form-row">
+      <label for="position">Position:</label>
+      <input type="text" id="position">
+    </div>
+
+    <div class="form-row">
+      <label for="description">Description:</label>
+      <textarea id="description"></textarea>
+    </div>
+
+    <h2>Education</h2>
+    <div class="form-row">
+      <label for="university">College/University:</label>
+      <input type="text" id="university">
+    </div>
+
+    <div class="form-row">
+      <label for="degree">Degree:</label>
+      <input type="text" id="degree">
+    </div>
+
+    <div class="form-row">
+      <label for="year">Year:</label>
+      <input type="text" id="year">
+    </div>
+
+    <h2>Skills</h2>
+    <div class="form-row">
+      <label for="skills">Skills:</label>
+      <textarea id="skills" required></textarea>
+    </div>
+
+    <button id="generate-btn">Generate Resume</button>
+  </div>
+
+  <div id="resume-preview">
+    <h2 id="preview-name"></h2>
+    <p id="preview-email"></p>
+    <p id="preview-phone"></p>
+    <h3>Experience</h3>
+    <ul id="preview-experience"></ul>
+    <h3>Education</h3>
+    <ul id="preview-education"></ul>
+    <h3>Skills</h3>
+    <p id="preview-skills"></p>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Shivkanta's Resume Builder. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
